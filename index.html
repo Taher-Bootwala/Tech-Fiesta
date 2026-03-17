@@ -337,9 +337,11 @@
 
         /* ───── EVENT CARD ───── */
         .event-card {
-            background: var(--card);
+            background: transparent;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
             border-radius: 20px; overflow: hidden;
-            border: 1px solid rgba(123,47,190,0.2);
+            border: 2px solid rgba(123,47,190,0.8);
             cursor: pointer; transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
         }
 
@@ -356,7 +358,7 @@
 
         .card-img::after {
             content: ''; position: absolute; inset: 0;
-            background: linear-gradient(to bottom, transparent 50%, var(--card));
+            background: transparent;
         }
 
         .card-badge {
@@ -384,10 +386,14 @@
 
         .card-btn {
             width: 100%; padding: 0.72rem;
-            background: var(--grad); border: none; border-radius: 10px;
+            background: linear-gradient(135deg, rgba(123,47,190,0.4), rgba(255,107,53,0.4));
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 10px;
             color: #fff; font-family: 'Poppins', sans-serif;
             font-weight: 600; font-size: 0.88rem; cursor: pointer;
-            transition: opacity 0.3s, transform 0.2s;
+            transition: all 0.3s;
             display: flex; align-items: center; justify-content: center; gap: 0.5rem;
             text-decoration: none;
         }
@@ -936,7 +942,7 @@ function renderCards(data, gridId) {
     const g = document.getElementById(gridId);
     g.innerHTML = data.map((ev, i) => `
         <div class="event-card reveal" style="transition-delay:${i*0.08}s" data-cat="${ev.cat}" data-type="${ev.type || ''}" onclick="openModal(${ev.id})">
-            <div class="card-img" style="background:linear-gradient(135deg,${ev.color}30,${ev.color}10);">
+            <div class="card-img">
                 <span style="position:relative;z-index:1;">${ev.emoji}</span>
                 <span class="card-badge" style="color:${ev.color};border-color:${ev.color}50;">${ev.badge}</span>
             </div>
