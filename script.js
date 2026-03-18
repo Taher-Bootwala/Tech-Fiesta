@@ -273,6 +273,11 @@ function renderCards(data, gridId) {
     }
     
     observe();
+    
+    // Refresh AOS to detect new elements
+    if (typeof AOS !== 'undefined') {
+        AOS.refresh();
+    }
 }
 
 /* ── Load with skeleton delay ── */
@@ -282,7 +287,7 @@ setTimeout(() => {
     document.getElementById('evGrid').style.display   = 'grid';
     renderCards(EVENTS, 'evGrid');
     renderCards(GAMES,  'gmGrid');
-}, 1800);
+}, 1000);
 
 /* ── Filter ── */
 let currentCat = 'all';
@@ -316,6 +321,11 @@ function applyFilters() {
         const typeMatch = (currentSubType === 'all' || c.dataset.type === currentSubType);
         c.style.display = (catMatch && typeMatch) ? '' : 'none';
     });
+
+    // Refresh AOS to detect newly visible elements
+    if (typeof AOS !== 'undefined') {
+        AOS.refresh();
+    }
 }
 
 /* ── Modal ── */
