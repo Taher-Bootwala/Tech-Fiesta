@@ -79,7 +79,7 @@ const EVENTS = [
    {
         id:13, cat:'nontech', type:'group', emoji:'<img src="images/escape_logo.png" style="width: 100px; height: 100px; object-fit: cover; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.5);" alt="Escape the Darkness">', color:'#E91E8C', badge:'Fun',
         title:'Escape the Darkness', desc:'Escape the Darkness is a thrilling game designed with a scary and mysterious environment. Participants enter the den and face surprising horror elements and challenges. Players must stay calm and complete the task inside the den.',
-        date:'', fee:'₹160', team:'4 Members', formLink:'https://forms.gle/orQ3xxCWNPiVrNVT6'
+        date:'', fee:'₹160', team:'4 Members', formLink:'https://forms.gle/9Z6E6UrRqTf6y6VX7'
     },
     {
         id:10, cat:'nontech', type:'group', emoji:'<img src="images/tri_logo.png" style="width: 100px; height: 100px; object-fit: cover; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.5);" alt="Triathlon">', color:'#E91E8C', badge:'Fun',
