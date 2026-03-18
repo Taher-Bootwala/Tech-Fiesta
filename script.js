@@ -12,7 +12,7 @@ const EVENTS = [
     {
         id:2, cat:'tech', type:'individual', emoji:'<img src="images/revcod_logo.png" style="width: 100px; height: 100px; object-fit: cover; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.5);" alt="Reverse Coding">', color:'#FF6B35', badge:'Tech',
         title:'Reverse Coding', desc:'Reverse Coding is a programming challenge where participants analyze given output or logic. Players must write the correct code that produces the given result. It tests logical thinking, problem-solving, and coding skills.',
-        date:'', fee:'₹30', team:'Solo', formLink:'#'
+        date:'', fee:'₹30', team:'Solo', formLink:'https://forms.gle/QngGbQxWyRfJTjz2A'
     },
     {
         id:3, cat:'tech', type:'individual', emoji:'<img src="images/vibecod_logo.png" style="width: 100px; height: 100px; object-fit: cover; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.5);" alt="Vibe Coding">', color:'#FF6B35', badge:'Tech',
