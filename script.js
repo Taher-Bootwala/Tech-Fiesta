@@ -49,12 +49,12 @@ const EVENTS = [
     {
         id:90, cat:'tech', type:'group', emoji:'<img src="images/circuit_logo.png" style="width: 100px; height: 100px; object-fit: cover; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.5);" alt="Circuit Design">', color:'#00BCD4', badge:'Tech',
         title:'Circuit Design (Group)', desc:'Circuit Design is a technical activity where participants create electronic circuits. Players design circuits using different electronic components. The activity tests technical knowledge and problem-solving skills.',
-        date:'', fee:'₹60', team:'2 Members', formLink:'#'
+        date:'', fee:'₹60', team:'2 Members', formLink:'https://docs.google.com/forms/d/e/1FAIpQLSd8ztg1N4iJSMY3jO7tDlf8KWuJXwrTmbVAq_6k-OZp403krQ/viewform?usp=publish-editor'
     },
     {
         id:91, cat:'tech', type:'group', emoji:'<img src="images/word_logo.png" style="width: 100px; height: 100px; object-fit: cover; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.5);" alt="Word Puzzle">', color:'#00BCD4', badge:'Tech',
         title:'Word Puzzle', desc:'Word Puzzle Round tests technical knowledge using puzzles like scrambled words and clues. Participants solve within a fixed time. Focuses on logical thinking and problem-solving. Winners based on accuracy and time.',
-        date:'', fee:'₹50', team:'2 Members', formLink:'#'
+        date:'', fee:'₹50', team:'2 Members', formLink:'https://docs.google.com/forms/d/e/1FAIpQLSe4mzZCNp_WwgSZcgYWnLuofAejZvMwU7vsZK0Lo5uJc8QVag/viewform?usp=publish-editor'
     },
     {
         id:92, cat:'tech', type:'group', emoji:'<img src="images/hack_logo.png" style="width: 100px; height: 100px; object-fit: cover; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.5);" alt="5hr Hackathon">', color:'#00BCD4', badge:'Tech',
