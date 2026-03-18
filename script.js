@@ -99,7 +99,7 @@ const EVENTS = [
     {
         id:16, cat:'nontech', type:'group', emoji:'<img src="images/satoliya_logo.png" style="width: 100px; height: 100px; object-fit: cover; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.5);" alt="Satoliya">', color:'#E91E8C', badge:'Fun',
         title:'Satoliya', desc:'Satoliya is a traditional outdoor game played with *seven stacked stones and a ball*. One team throws the ball to break the stack of stones. The same team must rebuild the stack while the other team tries to hit them with the ball. The team that successfully rebuilds the stones wins the round.',
-        date:'', fee:'₹200', team:'5 Members', formLink:'https://forms.gle/ZAmLDHRdPz9eG6U68'
+        date:'', fee:'₹200', team:'6 Members', formLink:'https://forms.gle/ZAmLDHRdPz9eG6U68'
     },
     {
         id:17, cat:'nontech', type:'group', emoji:'<img src="images/tic_logo.png" style="width: 100px; height: 100px; object-fit: cover; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.5);" alt="Tic Tac Toe">', color:'#E91E8C', badge:'Fun',
@@ -119,12 +119,12 @@ const EVENTS = [
     {
         id:21, cat:'nontech', type:'group', emoji:'<img src="images/dodge_logo.png" style="width: 100px; height: 100px; object-fit: cover; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.5);" alt="Dodge Ball">', color:'#E91E8C', badge:'Fun',
         title:'Dodge Ball', desc:'Dodge Ball is an exciting team game played with a ball. Players try to hit opponents with the ball while avoiding getting hit themselves. If a player is hit by the ball, they are out of the round.',
-        date:'', fee:'₹200', team:'5 Members', formLink:'https://forms.gle/yUtMsdJuVxVs9Pjw8'
+        date:'', fee:'₹200', team:'6 Members', formLink:'https://forms.gle/yUtMsdJuVxVs9Pjw8'
     },
     {
         id:22, cat:'nontech', type:'group', emoji:'<img src="images/bone_logo.png" style="width: 100px; height: 100px; object-fit: cover; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.5);" alt="Dog & Bone">', color:'#E91E8C', badge:'Fun',
         title:'Dog & Bone', desc:'Dog & Bone is a fun team game played between two groups. A "bone" (object) is placed in the center between the teams. When a number is called, players with that number from each team run to grab the bone.',
-        date:'', fee:'₹200', team:'10 Members', formLink:'https://forms.gle/fusKLmfC5zz91tvm8'
+        date:'', fee:'₹200', team:'6 Members', formLink:'https://forms.gle/fusKLmfC5zz91tvm8'
     },
     
    
