@@ -76,6 +76,11 @@ const EVENTS = [
     
 
     // --- NON-TECHNICAL GROUP EVENTS ---
+   {
+        id:13, cat:'nontech', type:'group', emoji:'<img src="images/escape_logo.png" style="width: 100px; height: 100px; object-fit: cover; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.5);" alt="Escape the Darkness">', color:'#E91E8C', badge:'Fun',
+        title:'Escape the Darkness', desc:'Escape the Darkness is a thrilling game designed with a scary and mysterious environment. Participants enter the den and face surprising horror elements and challenges. Players must stay calm and complete the task inside the den.',
+        date:'', fee:'₹160', team:'4 Members', formLink:'#'
+    },
     {
         id:10, cat:'nontech', type:'group', emoji:'<img src="images/tri_logo.png" style="width: 100px; height: 100px; object-fit: cover; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.5);" alt="Triathlon">', color:'#E91E8C', badge:'Fun',
         title:'Triathlon', desc:'Triathlon is a dynamic team event combining three fun challenges—Lemon and Spoon, Balloon Blast, and Cup Pyramid. Teams of two must race, coordinate, and build under pressure across each stage. It tests balance, teamwork, and speed. The fastest and most efficient team wins.',
@@ -122,11 +127,7 @@ const EVENTS = [
         date:'', fee:'₹200', team:'10 Members', formLink:'https://forms.gle/fusKLmfC5zz91tvm8'
     },
     
-   {
-        id:13, cat:'nontech', type:'group', emoji:'<img src="images/escape_logo.png" style="width: 100px; height: 100px; object-fit: cover; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.5);" alt="Escape the Darkness">', color:'#E91E8C', badge:'Fun',
-        title:'Escape the Darkness', desc:'Escape the Darkness is a thrilling game designed with a scary and mysterious environment. Participants enter the den and face surprising horror elements and challenges. Players must stay calm and complete the task inside the den.',
-        date:'', fee:'₹160', team:'4 Members', formLink:'#'
-    },
+   
 ];
 
 const GAMES = [
