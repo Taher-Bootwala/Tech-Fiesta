@@ -59,7 +59,7 @@ const EVENTS = [
     {
         id:92, cat:'tech', type:'group', emoji:'<img src="images/hack_logo.png" style="width: 100px; height: 100px; object-fit: cover; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.5);" alt="5hr Hackathon">', color:'#00BCD4', badge:'Tech',
         title:'5hr Hackathon', desc:'A 5-Hour Hackathon is a fast-paced coding event where participants build a project within five hours. Teams work on innovative ideas, software, or technical solutions. The event encourages creativity, teamwork, and problem-solving skills.',
-        date:'', fee:'₹160', team:'4 Members', formLink:'#'
+        date:'', fee:'₹160', team:'4 Members', formLink:'https://docs.google.com/forms/d/e/1FAIpQLScjVa3RWzgUsU6p-bC7ivMC1I1Kfxzo6fC-L7Icri5aLXdScw/viewform?usp=header'
     },
 
     // --- NON-TECHNICAL INDIVIDUAL EVENTS ---
