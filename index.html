@@ -51,6 +51,18 @@
             background: var(--grad);
             -webkit-background-clip: text; -webkit-text-fill-color: transparent;
             background-clip: text;
+            opacity: 0; /* Hidden initially for loader animation */
+            transition: opacity 0.3s ease, transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .logo.pop {
+            opacity: 1;
+            transform: scale(1);
+            animation: logoPop 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        @keyframes logoPop {
+            0% { transform: scale(0.8); opacity: 0; }
+            50% { transform: scale(1.1); opacity: 1; }
+            100% { transform: scale(1); opacity: 1; }
         }
 
         .nav-links { display: flex; gap: 2rem; list-style: none; }
@@ -623,12 +635,11 @@
         #loader {
             position: fixed; inset: 0; background: var(--dark); z-index: 99999;
             display: flex; flex-direction: column; justify-content: center; align-items: center;
-            transition: opacity 0.5s, visibility 0.5s;
+            transition: opacity 0.5s, visibility 0.5s, background 0.8s;
         }
         #loader.hidden { opacity: 0; visibility: hidden; }
-        #loader h2 { font-family: 'Orbitron', monospace; font-size: 2.5rem; background: var(--grad); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 1rem; animation: pulse 1.5s infinite; }
+        #loader h2 { font-family: 'Orbitron', monospace; font-size: 2.5rem; background: var(--grad); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 1rem; }
         .loader-text { color: var(--muted); font-size: 1.2rem; font-weight: 500; letter-spacing: 2px; }
-        @keyframes pulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.7; transform: scale(1.05); } }
         
         .progress-container { width: 250px; height: 6px; background: rgba(255,255,255,0.1); border-radius: 10px; margin-top: 1.5rem; overflow: hidden; position: relative; }
         .progress-bar { width: 0%; height: 100%; background: var(--grad); animation: fillProgress 1.5s ease-in-out forwards; border-radius: 10px; }
@@ -662,7 +673,7 @@
 
 <!-- ═══════════ LOADER & ENHANCEMENTS ═══════════ -->
 <div id="loader">
-    <h2>TECH-FIESTA '26</h2>
+    <h2>Trividhya'26</h2>
     <div class="loader-text">Loading...</div>
     <div class="progress-container">
         <div class="progress-bar" id="progressBar"></div>
@@ -1177,7 +1188,42 @@ window.addEventListener('scroll', () => {
 /* ── Loader ── */
 window.addEventListener('load', () => {
     setTimeout(() => {
-        document.getElementById('loader').classList.add('hidden');
+        const loader = document.getElementById('loader');
+        const loaderH2 = loader.querySelector('h2');
+        const navLogo = document.querySelector('.logo');
+        const loaderText = loader.querySelector('.loader-text');
+        const progContainer = loader.querySelector('.progress-container');
+        
+        // Fade out background and surrounding text
+        loader.style.background = 'transparent';
+        if (loaderText) {
+            loaderText.style.transition = 'opacity 0.4s';
+            loaderText.style.opacity = '0';
+        }
+        if (progContainer) {
+            progContainer.style.transition = 'opacity 0.4s';
+            progContainer.style.opacity = '0';
+        }
+        
+        // Calculate transform
+        const rectHero = loaderH2.getBoundingClientRect();
+        const rectTarget = navLogo.getBoundingClientRect();
+        
+        const scale = rectTarget.height / rectHero.height;
+        const translateX = rectTarget.left - rectHero.left;
+        const translateY = rectTarget.top - rectHero.top;
+        
+        // Animate H2
+        loaderH2.style.transformOrigin = 'top left';
+        loaderH2.style.transition = 'transform 0.8s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.2s 0.8s';
+        loaderH2.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+        
+        setTimeout(() => {
+            loaderH2.style.opacity = '0'; // Hide the animated text instantly
+            navLogo.classList.add('pop'); // Pop the real logo
+            loader.classList.add('hidden');
+        }, 800);
+        
     }, 1500); // Minimum 1.5s display for effect
 });
 
