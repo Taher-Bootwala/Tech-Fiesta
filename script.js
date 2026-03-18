@@ -135,21 +135,21 @@ const GAMES = [
         title:'BGMI Tournament',
         desc:'Battlegrounds Mobile India (BGMI) is a popular multiplayer battle royale mobile game. Players land on an island, collect weapons, and fight against other players. The safe zone gradually shrinks, making the game more intense.',
         date:'', fee:'₹160', team:'4 Members',
-        formLink:'https://forms.gle/REPLACE_GAME_1'
+        formLink:'https://forms.gle/2WVCxJ1HZrMnxN1s6'
     },
     {
         id:31, cat:'game', type:'group', emoji:'<img src="images/ff_logo.png" style="width: 100px; height: 100px; object-fit: cover; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.5);" alt="Free Fire">', color:'#27AE60', badge:'Gaming',
         title:'Free Fire',
         desc:'Garena Free Fire is a popular multiplayer battle royale mobile game. Players land on an island and *collect weapons, equipment, and resources* to survive. The safe zone keeps shrinking, forcing players to *fight and stay inside the zone*.',
         date:'', fee:'₹160', team:'4 Members',
-        formLink:'https://forms.gle/REPLACE_GAME_2'
+        formLink:'https://forms.gle/xyuDkpohmyRsj3Zo9'
     },
     {
         id:32, cat:'game', type:'group', emoji:'<img src="images/cod_logo.png" style="width: 100px; height: 100px; object-fit: cover; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.5);" alt="Call of Duty">', color:'#E74C3C', badge:'Gaming',
         title:'Call of Duty',
         desc:'Call of Duty: Mobile is a popular multiplayer shooting game played on mobile devices. Players compete in different modes like team battles and survival matches. The game includes various weapons, maps, and strategies.',
         date:'Mar 25', fee:'₹160', team:'4 Members',
-        formLink:'https://forms.gle/REPLACE_GAME_3'
+        formLink:'https://forms.gle/UTo3Hk9XVxKpbK9C7'
     },
 ];
 
