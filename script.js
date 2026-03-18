@@ -44,7 +44,7 @@ const EVENTS = [
     {
         id:4, cat:'tech', type:'group', emoji:'<img src="images/hack_logo.png" style="width: 100px; height: 100px; object-fit: cover; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.5);" alt="Arduino Hackathon">', color:'#00BCD4', badge:'Tech',
         title:'Arduino Hackathon', desc:'Arduino Hackathon is a technical event where participants build innovative hardware projects. Teams use Arduino boards and electronic components to create working prototypes. The event encourages creativity, problem-solving, and teamwork.',
-        date:'', fee:'₹160', team:'4 Members', formLink:'#'
+        date:'', fee:'₹160', team:'4 Members', formLink:'https://docs.google.com/forms/d/e/1FAIpQLSfeRedmovjAfra8WwdLG4o6fgYo9DpB7TBsfsZbiD0D9HoedQ/viewform?usp=header'
     },
     {
         id:90, cat:'tech', type:'group', emoji:'<img src="images/circuit_logo.png" style="width: 100px; height: 100px; object-fit: cover; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.5);" alt="Circuit Design">', color:'#00BCD4', badge:'Tech',
@@ -79,7 +79,7 @@ const EVENTS = [
    {
         id:13, cat:'nontech', type:'group', emoji:'<img src="images/escape_logo.png" style="width: 100px; height: 100px; object-fit: cover; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.5);" alt="Escape the Darkness">', color:'#E91E8C', badge:'Fun',
         title:'Escape the Darkness', desc:'Escape the Darkness is a thrilling game designed with a scary and mysterious environment. Participants enter the den and face surprising horror elements and challenges. Players must stay calm and complete the task inside the den.',
-        date:'', fee:'₹160', team:'4 Members', formLink:'#'
+        date:'', fee:'₹160', team:'4 Members', formLink:'https://forms.gle/orQ3xxCWNPiVrNVT6'
     },
     {
         id:10, cat:'nontech', type:'group', emoji:'<img src="images/tri_logo.png" style="width: 100px; height: 100px; object-fit: cover; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.5);" alt="Triathlon">', color:'#E91E8C', badge:'Fun',
