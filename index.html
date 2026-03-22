@@ -11,7 +11,7 @@
 </head>
 <body>
 
-<!-- ═══════════ LOADER & ENHANCEMENTS ═══════════ -->
+<!-- Loader & Enhancements -->
 <div id="loader">
     <h2>Trividhya'26</h2>
     <div class="loader-text">Loading...</div>
@@ -21,13 +21,12 @@
 </div>
 <div class="cyber-grid"></div>
 
-<!-- ═══════════ NAVBAR ═══════════ -->
+<!-- Navbar -->
 <nav id="navbar">
     <div class="logo">TRIVIDHYA'26</div>
     <ul class="nav-links" id="navLinks">
         <li><a href="#home">Home</a></li>
-        <li><a href="#events">Events</a></li>
-        <li><a href="#games">Games</a></li>
+        <li><a href="#events">Notice</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
     <div class="hamburger" id="hbg" onclick="toggleMenu()">
@@ -35,7 +34,7 @@
     </div>
 </nav>
 
-<!-- ═══════════ HERO ═══════════ -->
+<!-- Hero -->
 <section class="hero" id="home" data-aos="fade-in" data-aos-duration="1200">
     <div class="hero-bg"></div>
     <div class="particles" id="particles"></div>
@@ -48,7 +47,7 @@
             <i class="fas fa-map-marker-alt"></i> GEC Dahod
         </div>
         <div class="hero-btns">
-            <a href="#events" class="btn-primary"><i class="fas fa-rocket"></i> Explore Events</a>
+            <a href="#events" class="btn-primary"><i class="fas fa-bullhorn"></i> Read Notice</a>
         </div>
         <div class="hero-stats">
             <div class="stat"><div class="stat-num">20+</div><div class="stat-label">Events</div></div>
@@ -59,49 +58,29 @@
     </div>
 </section>
 
-<!-- ═══════════ COUNTDOWN ═══════════ -->
-<div class="countdown-section">
-    <p class="countdown-label-top">⏳ Event Starts In</p>
-    <div class="countdown">
-        <div class="cd-item"><div class="cd-num" id="cd-d">00</div><div class="cd-lbl">Days</div></div>
-        <div class="cd-item"><div class="cd-num" id="cd-h">00</div><div class="cd-lbl">Hours</div></div>
-        <div class="cd-item"><div class="cd-num" id="cd-m">00</div><div class="cd-lbl">Minutes</div></div>
-        <div class="cd-item"><div class="cd-num" id="cd-s">00</div><div class="cd-lbl">Seconds</div></div>
+<!-- Notice -->
+<section id="events" style="background: linear-gradient(rgba(18, 18, 42, 0.82), rgba(18, 18, 42, 0.82)), url('images/bg.jpg') center/cover no-repeat; background-attachment: fixed; padding: 6rem 1.5rem;">
+    <div class="sec-header" data-aos="fade-up" style="max-width: 980px; margin: 0 auto 2rem;">
+        <div class="sec-tag">Official Notice</div>
+        <h2 class="sec-title">The Event Has Been <span>Postponed</span></h2>
     </div>
-</div>
-
-<!-- ═══════════ EVENTS ═══════════ -->
-<section id="events" style="background: linear-gradient(rgba(18, 18, 42, 0.75), rgba(18, 18, 42, 0.75)), url('images/bg.jpg') center/cover no-repeat; background-attachment: fixed;">
-    <div class="sec-header" data-aos="fade-up">
-        <div class="sec-tag">💻 Tech Events | Non Tech Events</div>
-        <h2 class="sec-title">Showcase Your <span>Talent</span></h2>
+    <div data-aos="fade-up" data-aos-delay="100" style="max-width: 980px; margin: 0 auto; background: rgba(10, 15, 35, 0.82); border: 1px solid rgba(0, 255, 255, 0.18); border-radius: 24px; padding: 2rem; box-shadow: 0 20px 45px rgba(0, 0, 0, 0.28); color: #f3f7ff; line-height: 1.9;">
+        <h3 style="font-size: 1.8rem; margin-bottom: 1.25rem; color: #ffffff;">NOTICE: TECH-FIESTA 2026</h3>
+        <p>This is to inform all students, faculty members, and participants that the much-awaited Trividhiya Tech Fest 2026 has been postponed to the next semester.</p>
+        <p>Despite the dedicated efforts and continuous hard work put in by our faculty members, students, and the organizing committee to make this event a grand success, certain unavoidable external factors have necessitated this decision.</p>
+        <p>We want to acknowledge and sincerely appreciate the commitment, time, and energy contributed by everyone involved in planning and organizing the event.</p>
+        <p>The Tech Fest will now be conducted in the upcoming semester, and we assure you that it will be bigger, better, and more meticulously planned to provide an even more enriching and memorable experience for all.</p>
+        <p>We request everyone to remain patient, cooperative, and understanding during this time.</p>
+        <p>Further details regarding the rescheduled event will be shared in due course.</p>
+        <p style="margin-top: 1.75rem;">
+            <strong>Issued by:</strong><br>
+            Technical Committee<br>
+            Government Engineering College, Dahod
+        </p>
     </div>
-    <div class="filters" data-aos="fade-up" data-aos-delay="100">
-        <button class="filter-btn active" onclick="filterEvent('all',this)">All</button>
-        <button class="filter-btn" onclick="filterEvent('tech',this)">Tech</button>
-        <button class="filter-btn" onclick="filterEvent('nontech',this)">Non - Tech</button>
-    </div>
-    <div class="sub-filters" id="subFilters">
-        <button class="sub-filter-btn active" onclick="filterSubType('all',this)">All</button>
-        <button class="sub-filter-btn" onclick="filterSubType('individual',this)">Individual</button>
-        <button class="sub-filter-btn" onclick="filterSubType('group',this)">Group</button>
-    </div>
-    <div class="cards-grid" id="skelGrid"></div>
-    <div class="cards-grid" id="evGrid" style="display:none;"></div>
 </section>
 
-<!-- ═══════════ GAMES ═══════════ -->
-<section id="games" style="background: linear-gradient(rgba(10, 10, 26, 0.8), rgba(10, 10, 26, 0.8)), url('images/bg2.jpg') center/cover no-repeat; background-attachment: fixed;">
-    <div class="sec-header" data-aos="fade-up">
-        <div class="sec-tag">🎮 Games</div>
-        <h2 class="sec-title">Play Hard, <span>Win Big</span></h2>
-        <p class="sec-desc">Compete in thrilling games and sports tournaments. Glory and prizes await the brave.</p>
-    </div>
-    <div class="cards-grid" id="gmGrid"></div>
-</section>
-
-
-<!-- ═══════════ FOOTER ═══════════ -->
+<!-- Footer -->
 <footer id="contact">
     <div class="footer-grid">
         <div class="footer-brand">
@@ -117,40 +96,37 @@
         <div class="footer-col">
             <h4>Quick Links</h4>
             <ul>
-                <li><a href="#events">Cultural Events</a></li>
-                <li><a href="#games">Games</a></li>
+                <li><a href="#events">Notice</a></li>
             </ul>
         </div>
         <div class="footer-col">
             <h4>Contact</h4>
             <ul>
-                <!-- <li><a href="mailto:cultfest@college.edu"><i class="fas fa-envelope" style="margin-right:.5rem"></i></a></li> -->
-                <li><a href="tel:+919427182152" style="white-space:nowrap;"><i class="fas fa-phone" style="margin-right:.5rem"></i>+91 94271 82152 — Committee Head</a></li>
-                <li><a href="tel:+918511260871" style="white-space:nowrap;"><i class="fas fa-phone" style="margin-right:.5rem"></i>+91 85112 60871 — Committee Head</a></li>
-                <!-- <li><a href="#"><i class="fas fa-map-marker-alt" style="margin-right:.5rem"></i>GEC Dahod</a></li> -->
-                <li><i class="fas fa-map-marker-alt" style="margin-right:.5rem"></i>GEC Dahod</a></li>
+                <li><a href="tel:+919427182152" style="white-space:nowrap;"><i class="fas fa-phone" style="margin-right:.5rem"></i>+91 94271 82152 - Committee Head</a></li>
+                <li><a href="tel:+918511260871" style="white-space:nowrap;"><i class="fas fa-phone" style="margin-right:.5rem"></i>+91 85112 60871 - Committee Head</a></li>
+                <li><i class="fas fa-map-marker-alt" style="margin-right:.5rem"></i>GEC Dahod</li>
             </ul>
         </div>
     </div>
     <div class="footer-bottom">
-        <p>© Made by Technical Committee | GEC Dahod</p>
+        <p>&copy; Made by Technical Committee | GEC Dahod</p>
     </div>
 </footer>
 
-<!-- ═══════════ MODAL ═══════════ -->
+<!-- Modal -->
 <div class="modal-overlay" id="modalOverlay" onclick="closeOnBg(event)">
     <div class="modal-box">
         <div class="modal-head">
             <div>
                 <div class="modal-emoji" id="mEmoji"></div>
-                <div class="modal-title"  id="mTitle"></div>
+                <div class="modal-title" id="mTitle"></div>
             </div>
             <button class="modal-close" onclick="closeModal()"><i class="fas fa-times"></i></button>
         </div>
         <p class="modal-desc" id="mDesc"></p>
         <div class="modal-details">
-            <div class="modal-detail"><div class="modal-dlabel">🎟️ Fee</div>  <div class="modal-dval" id="mFee"></div></div>
-            <div class="modal-detail"><div class="modal-dlabel">👥 Team</div>  <div class="modal-dval" id="mTeam"></div></div>
+            <div class="modal-detail"><div class="modal-dlabel">Fee</div><div class="modal-dval" id="mFee"></div></div>
+            <div class="modal-detail"><div class="modal-dlabel">Team</div><div class="modal-dval" id="mTeam"></div></div>
         </div>
         <a href="#" id="mLink" target="_blank" class="modal-form-btn">
             <i class="fas fa-edit"></i> Register Now
